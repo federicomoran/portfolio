@@ -2,28 +2,31 @@
 
 Portafolo personal
 
-<div align="center" style="display:flex; justify-content: space-around">
-    <div>
-        <p>Antes</p>
-        <img src="assets/Portafolio_before.gif" alt="Antes" />
-    </div>
-    <hr>
-    <div>
-        <p>Despues</p>
-        <img src="assets/Portafolio_after.gif" alt="Despues" />
-    </div>
+<div>
+    <p>Antes ----------------------------------------------------------------------------------------------------------------------------------------------------------------Despues</p>
 </div>
-
+<div>
+<img align="left" width="450" height="auto" src="assets/Portafolio_before.gif">
+</div>
+<div style="float:right;">
+    <img align="right" width="400" height="auto" src="assets/Portafolio_after.gif">
+</div>
+<br>
 <hr>
-
-<div align="center" style="display:flex; justify-content: space-around">
-    <div>
-        <p>Antes</p>
-        <img src="assets/Portafolio_responsive_before.gif" alt="Antes_responsive" />
-    </div>
-    <hr>
-    <div>
-        <p>Despues</p>
-        <img src="assets/Portafolio_responsive_after.gif" alt="Despues_responsive" />
-    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+<p>Antes* ----------------------------------------------------------------------------------------------------------------------------------------------------------------Despues*</p>
+</div>
+<div>
+<img align="left" width="250" height="auto" src="assets/Portafolio_responsive_before.gif">
+</div>
+<div style="float:right;">
+    <img align="right" width="255" height="auto" src="assets/Portafolio_responsive_after.gif">
 </div>
