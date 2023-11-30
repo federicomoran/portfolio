@@ -9,10 +9,12 @@ Portafolo personal
 <img align="left" width="450" height="auto" src="assets/Portafolio_before.gif">
 </div>
 <div style="float:right;">
-    <img align="right" width="400" height="auto" src="assets/Portafolio_after.gif">
+    <img align="right" width="410" height="auto" src="assets/Portafolio_after.gif">
 </div>
 <br>
-<hr>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
