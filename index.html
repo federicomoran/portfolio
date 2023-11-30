@@ -11,19 +11,19 @@
     <!-- Estilos propios-->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<>
     <header>
         <!-- Inicio NavBar-->
         <nav class="py-3 navbar navbar-expand-lg fixed-top auto-hidden-navbar">
-            <div class="container">
+            <div class="container py-2 px-4">
               <a class="navbar-brand">Federico Moran</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" active aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#hero">Skills</a>
@@ -36,7 +36,7 @@
                     <a class="nav-link" href="#projects">Proyectos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contacto</a>
+                    <a class="nav-link pr-0" href="#contact">Contacto</a>
                   </li>
         
                 </ul>
@@ -48,55 +48,57 @@
     </header>
     <main>
       <section id="home">
-        <section class="container">
-          <div class="row">
-            <div class="col">
-              <h1>Desarrollador / Developer</h1>
-              <p>Actualmente soy desarrollador de software, me gusta el mundo IT y puedo decir que me enseña a practicar todo el tiempo la curiosidad. Aspiro a potenciar mis aptitudes, contribuir con mis conocimientos y estar receptivo para adquirir nuevas técnicas y herramientas.</p>
+        <section class="container pb-0 p-4">
+          <div class="row d-flex flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-8 pe-md-5">
+              <h1 class="fs-3">Desarrollador / Developer</h1>
+              <p class="pe-md-5">Actualmente soy desarrollador de software, me gusta el mundo IT y puedo decir que me enseña a practicar todo el tiempo la curiosidad. Aspiro a potenciar mis aptitudes, contribuir con mis conocimientos y estar receptivo para adquirir nuevas técnicas y herramientas.</p>
         
             </div>
-            <div class="col img-col">
-              <img src="dev.jpg" alt="Nuestro Hero" class="img-fluid" width="400" height="400">
+            <div class="col-12 col-md-4 img-col mb-5 contenedor-img-hero">
+              <img src="/assets/dev.jpg" alt="Nuestro Hero" class="img-fluid" width="400" height="400">
             </div>
           </div>
         </section>
           <!--Cards-->
           <section id="hero">
-            <div class="row cards">
+            <div class="row cards row-gap-3 row-gap-lg-5 m-5 pb-md-5 p-lg-0 pb-0">
               <!--1 -->
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img src="php.png" class="icon" alt="php">
-                  <div class="card-body">
-                    <h5 class="card-title">PHP</h5>
-                    <p class="card-text">Aprendizaje del lenguaje en instituto Normal Superior Gral Manuel Belgrano de Caucete, San Juan.</p>
+
+                <div class="col-md-6 col-lg-4 d-flex justify-content-start">
+                  <div class="card col col-lg-4 p-3" style="width: 22rem;">
+                    <img src="/assets/PHP.png" class="icon" alt="php">
+                    <div class="card-body">
+                      <h5 class="card-title">PHP</h5>
+                      <p class="card-text">Aprendizaje del lenguaje en instituto Normal Superior Gral Manuel Belgrano de Caucete, San Juan.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--2-->
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img src="mysql.png" class="icon" alt="mysql">
-                  <div class="card-body">
-                    <h5 class="card-title">MySQL</h5>
-                    <p class="card-text">Uso de lenguaje de base de datos para trabajos de PHP.</p>
+                <!--2-->
+                <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                  <div class="card col col-lg-4 p-3" style="width: 22rem;">
+                    <img src="/assets/MySQL.png" class="icon" alt="mysql">
+                    <div class="card-body">
+                      <h5 class="card-title">MySQL</h5>
+                      <p class="card-text">Uso de lenguaje de base de datos para trabajos de PHP.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <!--3-->
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img src="codeigniter.jpg" class="icon" alt="codeigniter">
-                  <div class="card-body">
-                    <h5 class="card-title">CodeIgniter 4</h5>
-                    <p class="card-text">Framework como herramienta de trabajo para proyectos.</p>
+                <!--3-->
+                <div class="col-md-6 col-lg-4 d-flex justify-content-end">
+                  <div class="card col col-lg-4 p-3" style="width: 22rem;">
+                    <img src="/assets/CodeIgniter.png" class="icon" alt="codeigniter">
+                    <div class="card-body">
+                      <h5 class="card-title">CodeIgniter 4</h5>
+                      <p class="card-text">Framework como herramienta de trabajo para proyectos.</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+
               <!--4-->
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img src="python.png"  class="icon" alt="python">
+              <div class="col-md-6 col-lg-4 d-flex justify-content-start">
+                <div class="card col col-lg-4 p-3" style="width: 22rem;">
+                  <img src="/assets/Python.png"  class="icon" alt="python">
                   <div class="card-body">
                     <h5 class="card-title">Python</h5>
                     <p class="card-text">Conocimiento básico sobre esta herramienta tecnológica.</p>
@@ -104,9 +106,9 @@
                 </div>
               </div>
               <!--5-->
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img src="mongodb.png"  class="icon" alt="python">
+              <div class="col-md-6 col-lg-4 d-flex justify-content-center">
+                <div class="card col col-lg-4 p-3" style="width: 22rem;">
+                  <img src="/assets/MongoDB.png"  class="icon" alt="python">
                   <div class="card-body">
                     <h5 class="card-title">MongoDB</h5>
                     <p class="card-text">Conocimiento básico sobre esta herramienta tecnológica.</p>
@@ -114,9 +116,9 @@
                 </div>
               </div>
               <!--6-->
-              <div class="col-md-4 d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                  <img src="oxford.png"  class="icon" alt="python">
+              <div class="col-md-6 col-lg-4 d-flex justify-content-end">
+                <div class="card col col-lg-4 p-3" style="width: 22rem;">
+                  <img src="/assets/oxford.png"  class="icon" alt="python">
                   <div class="card-body">
                     <h5 class="card-title">Oxford's certificate</h5>
                     <p class="card-text">English intermediate level (B1) broadcasted by Oxford University.</p>
@@ -130,12 +132,12 @@
       <!--Sobre mí-->
       <section id="about-me">
         <div class="container">
-          <div class="row align-item-center">
-            <div class="col">
-              <img src="yo.jpg" alt="Sobre mi" class="img-fluid" width="300" height="300">
+          <div class="row align-item-center mx-md-1">
+            <div class="col-12 text-center text-md-start col-md-4 mb-4">
+              <img src="/assets/yo.jpg" alt="Sobre mi" class="img-fluid yo" width="300" height="300">
             </div>
-            <div class="col">
-              <h1>Sobre mi</h1>
+            <div class="col-12 col-md-8 px-4 pb-4 pt-0">
+              <h1 class="fs-3">Sobre mi</h1>
               <p>
                 Actualmente soy desarrollador de software, me gusta el mundo IT y puedo decir que me enseña a practicar todo el tiempo la curiosidad. Aspiro a potenciar mis aptitudes, contribuir con mis conocimientos y estar receptivo para adquirir nuevas técnicas y herramientas.
               </p>
@@ -151,27 +153,27 @@
       <!--Fin sobre mí-->
       <!--Projects-->
       <section id="projects">
-        <div class="container">
+        <div class="container p-4">
           <div class="row align-items-center projects">
             <div class="col">
-              <h1>Mis proyectos</h1>
+              <h1 class="fs-3 mb-4">Mis proyectos</h1>
             </div>
           </div>
-          <div class="row align-items-center projects">
+          <div class="row align-items-center projects row-gap-3">
             <!--Proyecto 1-->
-            <div class="col-md-4 d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
+            <div class="col-lg-4 d-flex justify-content-center card-proyectos">
+              <div class="card col" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Sistema de alumnos</h5>
-                  <p class="card-text">Desarrollé un sistema donde los alumnos necesitaban inscribirse a mesas de examenes, estas mismas estaban conformadas por docentes.</p>
+                  <p class="card-text">Desarrollé un sistema donde los alumnos necesitaban inscribirse a mesas de examenes, estas mismas estaban conformadas por docentes.</p><br>
                   <p>HTML, CSS, PHP, MySQL.</p>
                   <a href="https://github.com/federicomoran/sistemalumnos" class="btn btn-success">Go somewhere</a>
                 </div>
               </div>
             </div>
             <!--Proyecto 2-->
-            <div class="col-md-4 d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
+            <div class="col-lg-4 d-flex justify-content-center card-proyectos">
+              <div class="card col" style="width: 18rem;">
             
                 <div class="card-body">
                   <h5 class="card-title">Utilización de framework</h5>
@@ -182,8 +184,8 @@
               </div>
             </div>
             <!--Proyecto 3-->
-            <div class="col-md-4 d-flex justify-content-center">
-              <div class="card" style="width: 18rem;">
+            <div class="col-lg-4 d-flex justify-content-center card-proyectos">
+              <div class="card col" style="width: 18rem;">
                 <div class="card-body">
                   <h5 class="card-title">Matriz de adyacencia</h5>
                   <p class="card-text">En Python he creado una matriz de adyacencia, una vez ejecutado el código, la misma se imprime al azar (6x6) mostrando su número de aristas, lazos y grado de cada vértice.</p>
@@ -204,14 +206,18 @@
               <div class="col">
                 <h1>Contacto</h1>
               
-                  <p>LinkedIn: <a href="https://www.linkedin.com/in/federicojmoran/" target="_blank"><img src="logolink.png" alt=""style="width: 40px; height40px"></a></p>
+                  <p>LinkedIn: <a href="https://www.linkedin.com/in/federicojmoran/" target="_blank"><img src="/assets/logolink.png" alt=""style="width: 40px; height40px"></a></p>
                   <p>
-                  Email: federicojmoran@gmail.com <img src="logoemail.jpg" alt=""style="width: 40px; height40px">
+                  Email: federicojmoran@gmail.com <img src="/assets/logoemail.jpg" alt=""style="width: 40px; height40px">
                   </p>
               </div>
             </div>
           </div>
         </section>
       </footer>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

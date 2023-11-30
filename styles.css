@@ -27,6 +27,9 @@ section{
     padding-top: 50px;
     padding-bottom: 50px;
 }
+section#home{
+    padding-top: 80px !important;
+}
 section h1{
     text-transform: uppercase;
     font-weight: 800;
@@ -42,6 +45,7 @@ button{
     max-width: 50%;
     border-radius: 50px !important;
 }
+
 #hero .col{
     justify-content: center;
     flex-direction: column;
@@ -56,7 +60,9 @@ button{
     height: auto;
 }
 #hero .card{
-    box-shadow: 11px 7px 16px #f9f9f9;
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
+    box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
     border: 0;
     text-align: center;
 }
@@ -73,6 +79,61 @@ button{
     text-align: center !important;
     color: white !important;
 }
-/* .menu{
-    width: 20px;
-} */
+
+/* Custon */
+section#hero {
+    display: flex;
+    justify-content: center;
+}
+
+section#hero .row.cards {
+    max-width: 1300px;
+}
+
+.contenedor-img-hero{
+    text-align: right;
+}
+
+.row.cards {
+    max-width: 1320px;
+}
+
+.card-proyectos div{
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
+    box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
+}
+
+li.nav-item {
+    text-align: right;
+}
+
+a.nav-link.pr-0 {
+    padding-right: 0 !important;
+}
+
+@media screen and (max-width:768px){
+
+    .img-fluid.yo {
+        height: auto;
+        clip-path: inset(20% 0 0 0);
+        width: 90%;
+        margin-top: -40px;
+    }
+    #hero, #about-me, #projects{
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    li.nav-item {
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width:1140px) {
+    h1.fs-3 {
+        font-size: 40px !important;
+    }
+
+    
+}
