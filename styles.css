@@ -1,86 +1,115 @@
-body{
+body {
     display: block;
     overflow-x: hidden;
 }
-nav{
+
+nav {
     background-color: white;
 }
+
 .navbar-brand {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 900;
-    color: #683
+    color: #683;
 }
-.navbar-brand:hover{
-    color: #072cfc
 
+.navbar-brand:hover {
+    color: #072cfc;
 }
-nav ul li a{
+
+nav ul li a {
     color: #8e8b8b;
     font-size: 22px;
     margin: auto 10px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #683aa4;
 }
-section{
+
+section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-section#home{
+
+section#home {
     padding-top: 80px !important;
 }
-section h1{
+
+section h1 {
     text-transform: uppercase;
     font-weight: 800;
     color: #683;
     text-align: left;
     margin-bottom: 15px;
 }
-section p{
+
+section p {
     font-size: 16px;
     font-weight: 300;
 }
-button{
+
+button {
     max-width: 50%;
     border-radius: 50px !important;
 }
 
-#hero .col{
+#hero .col {
     justify-content: center;
     flex-direction: column;
     display: flex;
 }
-#hero .img-col{
+
+#hero .img-col {
     justify-content: flex-end;
     margin: 110px 10px;
 }
-#hero img{
+
+#hero img {
     max-width: 100%;
     height: auto;
 }
-#hero .card{
+
+#hero .card {
     -webkit-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
     -moz-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
     box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
     border: 0;
     text-align: center;
 }
-#hero .icon{
+
+#hero .icon {
     width: 50px;
     height: 50px;
 }
+
 #contact {
     text-align: center !important;
     background-color: #683 !important;
     color: white !important;
+    padding: 50px 0;
 }
+
 #contact h1 {
     text-align: center !important;
     color: white !important;
 }
 
-/* Custon */
+.btn-golden {
+    background-color: #daa520;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-golden:hover {
+    background-color: #c29419;
+    color: white;
+}
+
+/* Custom */
 section#hero {
     display: flex;
     justify-content: center;
@@ -90,7 +119,7 @@ section#hero .row.cards {
     max-width: 1300px;
 }
 
-.contenedor-img-hero{
+.contenedor-img-hero {
     text-align: right;
 }
 
@@ -98,7 +127,7 @@ section#hero .row.cards {
     max-width: 1320px;
 }
 
-.card-proyectos div{
+.card-proyectos div {
     -webkit-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
     -moz-box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
     box-shadow: 3px 3px 10px 0px rgba(179,179,179,1);
@@ -112,28 +141,27 @@ a.nav-link.pr-0 {
     padding-right: 0 !important;
 }
 
-@media screen and (max-width:768px){
-
+@media screen and (max-width:768px) {
     .img-fluid.yo {
         height: auto;
         clip-path: inset(20% 0 0 0);
         width: 90%;
         margin-top: -40px;
     }
-    #hero, #about-me, #projects{
+
+    #hero, #about-me, #projects {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
+
     li.nav-item {
         text-align: left;
     }
 }
 
-
 @media screen and (min-width:1140px) {
     h1.fs-3 {
         font-size: 40px !important;
     }
-
-    
 }
+
